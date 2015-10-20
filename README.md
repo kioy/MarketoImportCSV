@@ -20,6 +20,7 @@ A shell script for import leads data (csv file) via ReST API of Marketo.
 
   CSV Files: 
       If your CSV file is over 10MB, you have to split it into less than 10MB files. All CSV files must have column names at the first row.
+
   Other commands: jq 1.4, curl 7.43.0
 
 # License
