@@ -16,10 +16,10 @@ A shell script for import leads data (csv file) via ReST API of Marketo.
 3. Run importCSV2Marketo.sh
 
 
-
 # Required
 
   jq 1.4
+
   curl 7.43.0
 
 # License
