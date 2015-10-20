@@ -18,8 +18,9 @@ A shell script for import leads data (csv file) via ReST API of Marketo.
 
 
 # Required
-  jq 1.4
-  curl 7.43.0
+
+jq 1.4
+curl 7.43.0
 
 # License
 This source is licensed under an MIT License, see the LICENSE file for full details. If you use this code, it would be great to hear from you.
