@@ -3,9 +3,11 @@ A shell script for import leads data (csv file) via ReST API of Marketo.
 
 # Usage
 1. Setup Marketo ReST API on your Marketo instance
+
    http://developers.marketo.com/blog/quick-start-guide-for-marketo-rest-api/
 
 2. Revise Variables in the script
+
    MARKETO_END_POINT: Marketo ReST API end point, e.g. https://999-nnn-999.mktorest.com
    CLIENT_ID: Client ID for ReST access, you can retrieve it through step.1 above.
    CLIENT_SECRET: Client Secret key for ReST access
