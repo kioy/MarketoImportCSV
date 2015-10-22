@@ -4,7 +4,7 @@ CLIENT_ID=ed5877ae-9999-4208-99f0-e9761984ee22
 CLIENT_SECRET=Pd6ICb73s999988JmxjpLICMcLzyIr
 CSV_FILE_PATH=data.csv
 # インポート用リスト：リードデータベース＞Imported Data from API/Imported Data
-MARKETO_LIST_ID=1014
+# MARKETO_LIST_ID=
 
 JQ="jq -r"
 CURL="curl -s"
@@ -40,7 +40,8 @@ import_market()
     while true
     do
         # curl実行 import API
-        upload_exe="${CURL} -F format=csv -F file=@${1} -F access_token=${access_token} -F listId=${MARKETO_LIST_ID} ${MARKETO_END_POINT}/bulk/v1/leads.json"
+        upload_exe="${CURL} -F format=csv -F file=@${1} -F access_token=${access_token} ${MARKETO_END_POINT}/bulk/v1/leads.json"
+        # upload_exe="${CURL} -F format=csv -F file=@${1} -F access_token=${access_token} -F listId=${MARKETO_LIST_ID} ${MARKETO_END_POINT}/bulk/v1/leads.json"
 	echo "実行コマンド="${upload_exe}
 	result=`${upload_exe}`
 	echo "実行結果="${result}
